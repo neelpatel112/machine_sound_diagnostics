@@ -1,0 +1,187 @@
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:extractDebugPythonBuildPackages
+
+> Task :app:generateDebugPythonRequirements
+Chaquopy: Installing for arm64-v8a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting numpy
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_21_arm64_v8a.whl (3.8 MB)
+Collecting librosa==0.8.1
+  Using cached librosa-0.8.1-py3-none-any.whl (203 kB)
+Collecting tflite-runtime
+  Using cached https://chaquo.com/pypi-13.1/tflite-runtime/tflite_runtime-2.5.0-1-cp38-cp38-android_21_arm64_v8a.whl (1.2 MB)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='chaquo.com', port=443): Read timed out. (read timeout=15)")': /pypi-13.1/chaquopy-openblas/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x00000251272C7050>, 'Connection to chaquo.com timed out. (connect timeout=15)')': /pypi-13.1/chaquopy-openblas/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x000002512728A790>, 'Connection to chaquo.com timed out. (connect timeout=15)')': /pypi-13.1/chaquopy-openblas/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x000002512728AD90>, 'Connection to chaquo.com timed out. (connect timeout=15)')': /pypi-13.1/chaquopy-openblas/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x000002512728B350>, 'Connection to chaquo.com timed out. (connect timeout=15)')': /pypi-13.1/chaquopy-openblas/
+Collecting chaquopy-openblas>=0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_arm64_v8a.whl (4.3 MB)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/chaquopy-libgfortran/
+Collecting chaquopy-libgfortran>=4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_arm64_v8a.whl (495 kB)
+Collecting audioread>=2.0.0
+  Using cached audioread-3.0.1-py3-none-any.whl (23 kB)
+Collecting scikit-learn!=0.19.0,>=0.14.0
+  Using cached https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.1.3-1-cp38-cp38-android_21_arm64_v8a.whl (7.0 MB)
+Collecting soundfile>=0.10.2
+  Downloading https://chaquo.com/pypi-13.1/soundfile/SoundFile-0.10.3.post1-0-cp38-cp38-android_21_arm64_v8a.whl (21 kB)
+Collecting decorator>=3.0.0
+  Using cached decorator-5.2.1-py3-none-any.whl (9.2 kB)
+Collecting scipy>=1.0.0
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_21_arm64_v8a.whl (15.8 MB)
+Collecting joblib>=0.14
+  Using cached joblib-1.4.2-py3-none-any.whl (301 kB)
+Collecting resampy>=0.2.2
+  Using cached resampy-0.4.3-py3-none-any.whl (3.1 MB)
+Collecting numba>=0.43.0
+  Using cached https://chaquo.com/pypi-13.1/numba/numba-0.48.0-9-cp38-cp38-android_21_arm64_v8a.whl (2.1 MB)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /pypi-13.1/pooch/
+Collecting pooch>=1.0
+  Using cached pooch-1.8.2-py3-none-any.whl (64 kB)
+Collecting packaging>=20.0
+  Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Collecting chaquopy-libcxx>=10000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_arm64_v8a.whl (413 kB)
+Collecting chaquopy-libomp>=9.0.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libomp/chaquopy_libomp-9.0.9-0-py3-none-android_21_arm64_v8a.whl (240 kB)
+Collecting threadpoolctl>=2.0.0
+  Using cached threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Collecting cffi>=1.0
+  Using cached https://chaquo.com/pypi-13.1/cffi/cffi-1.13.2-1-cp38-cp38-android_21_arm64_v8a.whl (168 kB)
+Collecting chaquopy-libsndfile>=1.0.28
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libsndfile/chaquopy_libsndfile-1.0.28-0-py3-none-android_21_arm64_v8a.whl (273 kB)
+Collecting importlib-resources; python_version < "3.9"
+  Downloading importlib_resources-6.4.5-py3-none-any.whl (36 kB)
+Collecting llvmlite<0.32.0,>=0.31.0dev0
+  Downloading https://chaquo.com/pypi-13.1/llvmlite/llvmlite-0.31.0-2-cp38-cp38-android_21_arm64_v8a.whl (189 kB)
+Collecting setuptools
+  Downloading setuptools-75.3.2-py3-none-any.whl (1.3 MB)
+Collecting requests>=2.19.0
+  Using cached requests-2.32.4-py3-none-any.whl (64 kB)
+Collecting platformdirs>=2.5.0
+  Using cached platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Collecting chaquopy-libffi>=3.3
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libffi/chaquopy_libffi-3.3-3-py3-none-android_24_arm64_v8a.whl (33 kB)
+Collecting pycparser
+  Using cached pycparser-2.23-py3-none-any.whl (118 kB)
+Collecting chaquopy-libogg>=1.3.4
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libogg/chaquopy_libogg-1.3.4-0-py3-none-android_21_arm64_v8a.whl (23 kB)
+Collecting chaquopy-flac>=1.3.3
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-flac/chaquopy_flac-1.3.3-0-py3-none-android_21_arm64_v8a.whl (426 kB)
+Collecting chaquopy-libvorbis>=1.3.7
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libvorbis/chaquopy_libvorbis-1.3.7-0-py3-none-android_21_arm64_v8a.whl (234 kB)
+Collecting zipp>=3.1.0; python_version < "3.10"
+  Using cached zipp-3.20.2-py3-none-any.whl (9.2 kB)
+Collecting chaquopy-llvm>=8.0.0
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-llvm/chaquopy_llvm-8.0.0-2-py3-none-android_21_arm64_v8a.whl (18.5 MB)
+Collecting urllib3<3,>=1.21.1
+  Using cached urllib3-2.2.3-py3-none-any.whl (126 kB)
+Collecting idna<4,>=2.5
+  Using cached idna-3.11-py3-none-any.whl (71 kB)
+Collecting charset_normalizer<4,>=2
+  Using cached charset_normalizer-3.4.4-py3-none-any.whl (53 kB)
+Collecting certifi>=2017.4.17
+  Using cached certifi-2025.11.12-py3-none-any.whl (159 kB)
+ERROR: resampy 0.4.3 has requirement numba>=0.53, but you'll have numba 0.48.0 which is incompatible.
+Installing collected packages: chaquopy-libgfortran, chaquopy-openblas, numpy, audioread, chaquopy-libomp, chaquopy-libcxx, scipy, joblib, threadpoolctl, scikit-learn, chaquopy-libffi, pycparser, cffi, chaquopy-libogg, chaquopy-flac, chaquopy-libvorbis, chaquopy-libsndfile, soundfile, decorator, zipp, importlib-resources, chaquopy-llvm, llvmlite, setuptools, numba, resampy, urllib3, idna, charset-normalizer, certifi, requests, packaging, platformdirs, pooch, librosa, tflite-runtime
+Successfully installed audioread-3.0.1 certifi-2025.11.12 cffi-1.13.2 chaquopy-flac-1.3.3 chaquopy-libcxx-180000 chaquopy-libffi-3.3 chaquopy-libgfortran-4.9 chaquopy-libogg-1.3.4 chaquopy-libomp-9.0.9 chaquopy-libsndfile-1.0.28 chaquopy-libvorbis-1.3.7 chaquopy-llvm-8.0.0 chaquopy-openblas-0.2.20 charset-normalizer-3.4.4 decorator-5.2.1 idna-3.11 importlib-resources-6.4.5 joblib-1.4.2 librosa-0.8.1 llvmlite-0.31.0 numba-0.48.0 numpy-1.19.5 packaging-25.0 platformdirs-4.3.6 pooch-1.8.2 pycparser-2.23 requests-2.32.4 resampy-0.4.3 scikit-learn-1.1.3 scipy-1.4.1 setuptools-75.3.2 soundfile-0.10.3.post1 tflite-runtime-2.5.0 threadpoolctl-3.5.0 urllib3-2.2.3 zipp-3.20.2
+Chaquopy: Installing for x86_64
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting cffi==1.13.2
+  Downloading https://chaquo.com/pypi-13.1/cffi/cffi-1.13.2-1-cp38-cp38-android_21_x86_64.whl (178 kB)
+Collecting chaquopy-flac==1.3.3
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-flac/chaquopy_flac-1.3.3-0-py3-none-android_21_x86_64.whl (465 kB)
+Collecting chaquopy-libcxx==180000
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_x86_64.whl (422 kB)
+Collecting chaquopy-libffi==3.3
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libffi/chaquopy_libffi-3.3-3-py3-none-android_24_x86_64.whl (35 kB)
+Collecting chaquopy-libgfortran==4.9
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_x86_64.whl (541 kB)
+Collecting chaquopy-libogg==1.3.4
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libogg/chaquopy_libogg-1.3.4-0-py3-none-android_21_x86_64.whl (25 kB)
+Collecting chaquopy-libomp==9.0.9
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libomp/chaquopy_libomp-9.0.9-0-py3-none-android_21_x86_64.whl (308 kB)
+Collecting chaquopy-libsndfile==1.0.28
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libsndfile/chaquopy_libsndfile-1.0.28-0-py3-none-android_21_x86_64.whl (236 kB)
+Collecting chaquopy-libvorbis==1.3.7
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libvorbis/chaquopy_libvorbis-1.3.7-0-py3-none-android_21_x86_64.whl (255 kB)
+Collecting chaquopy-llvm==8.0.0
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-llvm/chaquopy_llvm-8.0.0-2-py3-none-android_21_x86_64.whl (20.5 MB)
+Collecting chaquopy-openblas==0.2.20
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_x86_64.whl (5.3 MB)
+Collecting llvmlite==0.31.0
+  Downloading https://chaquo.com/pypi-13.1/llvmlite/llvmlite-0.31.0-2-cp38-cp38-android_21_x86_64.whl (189 kB)
+Collecting numba==0.48.0
+  Downloading https://chaquo.com/pypi-13.1/numba/numba-0.48.0-9-cp38-cp38-android_21_x86_64.whl (2.1 MB)
+Collecting numpy==1.19.5
+  Downloading https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_21_x86_64.whl (4.6 MB)
+Collecting scikit-learn==1.1.3
+  Downloading https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.1.3-1-cp38-cp38-android_21_x86_64.whl (7.7 MB)
+Collecting scipy==1.4.1
+  Downloading https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_21_x86_64.whl (17.7 MB)
+Collecting tflite-runtime==2.5.0
+  Downloading https://chaquo.com/pypi-13.1/tflite-runtime/tflite_runtime-2.5.0-1-cp38-cp38-android_21_x86_64.whl (1.7 MB)
+Installing collected packages: cffi, chaquopy-flac, chaquopy-libcxx, chaquopy-libffi, chaquopy-libgfortran, chaquopy-libogg, chaquopy-libomp, chaquopy-libsndfile, chaquopy-libvorbis, chaquopy-llvm, chaquopy-openblas, llvmlite, numba, numpy, scikit-learn, scipy, tflite-runtime
+Successfully installed cffi-1.13.2 chaquopy-flac-1.3.3 chaquopy-libcxx-180000 chaquopy-libffi-3.3 chaquopy-libgfortran-4.9 chaquopy-libogg-1.3.4 chaquopy-libomp-9.0.9 chaquopy-libsndfile-1.0.28 chaquopy-libvorbis-1.3.7 chaquopy-llvm-8.0.0 chaquopy-openblas-0.2.20 llvmlite-0.31.0 numba-0.48.0 numpy-1.19.5 scikit-learn-1.1.3 scipy-1.4.1 tflite-runtime-2.5.0
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\chaquopy\pip_install.py", line 362, in <module>
+    PipInstall().main()
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\chaquopy\pip_install.py", line 80, in main
+    self.merge_common(abi_trees)
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\chaquopy\pip_install.py", line 181, in merge_common
+    self.move_to_common(self.android_abis[0], path)
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\chaquopy\pip_install.py", line 202, in move_to_common
+    renames(abi_filename, common_filename)
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\retrying.py", line 53, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\retrying.py", line 217, in call
+    raise attempt.get()
+          ^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\retrying.py", line 252, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\six.py", line 725, in reraise
+    raise value
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\retrying.py", line 204, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+                      ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\chaquopy\pip_install.py", line 299, in renames
+    os.renames(src, dst)
+  File "<frozen os>", line 272, in renames
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Lenovo\\machinedignostic\\app\\build\\python\\pip\\debug\\arm64-v8a\\cffi' -> 'C:\\Users\\Lenovo\\machinedignostic\\app\\build\\python\\pip\\debug\\common\\cffi'
+
+> Task :app:generateDebugPythonRequirements FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/Lenovo/machinedignostic/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:generateDebugPythonRequirements'.
+> Process 'command 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe'' finished with non-zero exit value 1 
+  
+  To view full details in Android Studio:
+  * Click the 'Build: failed' caption to the left of this message.
+  * Then scroll up to see the full output.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 15m 38s
+3 actionable tasks: 3 executed

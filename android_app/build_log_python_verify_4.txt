@@ -1,0 +1,63 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:extractDebugPythonBuildPackages
+
+> Task :app:generateDebugPythonRequirements
+Chaquopy: Installing for arm64-v8a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting numpy
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_21_arm64_v8a.whl (3.8 MB)
+Collecting librosa==0.8.1
+  Downloading librosa-0.8.1-py3-none-any.whl (203 kB)
+Collecting tflite-runtime
+  Using cached https://chaquo.com/pypi-13.1/tflite-runtime/tflite_runtime-2.5.0-1-cp38-cp38-android_21_arm64_v8a.whl (1.2 MB)
+Collecting chaquopy-libgfortran>=4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_arm64_v8a.whl (495 kB)
+Collecting chaquopy-openblas>=0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_arm64_v8a.whl (4.3 MB)
+Collecting numba>=0.43.0
+  Downloading https://chaquo.com/pypi-13.1/numba/numba-0.48.0-9-cp38-cp38-android_21_arm64_v8a.whl (2.1 MB)
+Collecting joblib>=0.14
+  Using cached joblib-1.4.2-py3-none-any.whl (301 kB)
+Collecting pooch>=1.0
+  Using cached pooch-1.8.2-py3-none-any.whl (64 kB)
+Collecting decorator>=3.0.0
+  Using cached decorator-5.2.1-py3-none-any.whl (9.2 kB)
+Collecting packaging>=20.0
+  Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Collecting resampy>=0.2.2
+  Downloading resampy-0.4.3-py3-none-any.whl (3.1 MB)
+ERROR: Could not install packages due to an EnvironmentError: [Errno 2] No such file or directory: 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\pip-req-tracker-5ql0qeoz\\7e20f67205460c2990dc3d43525f043c513381bcfe256dfd8072b3b3'
+
+Chaquopy: Exit status 1
+
+> Task :app:generateDebugPythonRequirements FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/Lenovo/machinedignostic/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:generateDebugPythonRequirements'.
+> Process 'command 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe'' finished with non-zero exit value 1 
+  
+  To view full details in Android Studio:
+  * Click the 'Build: failed' caption to the left of this message.
+  * Then scroll up to see the full output.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 30s
+2 actionable tasks: 2 executed

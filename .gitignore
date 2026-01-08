@@ -1,0 +1,6 @@
+# Ignore Android build folders
+/android_app/app/build*/
+*.iml
+/.gradle
+/local.properties
+/.idea

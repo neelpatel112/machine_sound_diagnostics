@@ -1,0 +1,134 @@
+Starting a Gradle Daemon, 4 stopped Daemons could not be reused, use --status for details
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:extractDebugPythonBuildPackages UP-TO-DATE
+
+> Task :app:generateDebugPythonRequirements
+Chaquopy: Installing for arm64-v8a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting numpy
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_21_arm64_v8a.whl (3.8 MB)
+Collecting scipy
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_21_arm64_v8a.whl (15.8 MB)
+Collecting chaquopy-libgfortran>=4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_arm64_v8a.whl (495 kB)
+Collecting chaquopy-openblas>=0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_arm64_v8a.whl (4.3 MB)
+Collecting chaquopy-libcxx>=7000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_arm64_v8a.whl (413 kB)
+Installing collected packages: chaquopy-libgfortran, chaquopy-openblas, numpy, chaquopy-libcxx, scipy
+Successfully installed chaquopy-libcxx-180000 chaquopy-libgfortran-4.9 chaquopy-openblas-0.2.20 numpy-1.19.5 scipy-1.4.1
+Chaquopy: Installing for armeabi-v7a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting chaquopy-libcxx==180000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_armeabi_v7a.whl (355 kB)
+Collecting chaquopy-libgfortran==4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_16_armeabi_v7a.whl (394 kB)
+Collecting chaquopy-openblas==0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_16_armeabi_v7a.whl (4.0 MB)
+Collecting numpy==1.19.5
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_16_armeabi_v7a.whl (3.7 MB)
+Collecting scipy==1.4.1
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_16_armeabi_v7a.whl (15.0 MB)
+Installing collected packages: chaquopy-libcxx, chaquopy-libgfortran, chaquopy-openblas, numpy, scipy
+Successfully installed chaquopy-libcxx-180000 chaquopy-libgfortran-4.9 chaquopy-openblas-0.2.20 numpy-1.19.5 scipy-1.4.1
+Chaquopy: Installing for x86
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting chaquopy-libcxx==180000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_x86.whl (444 kB)
+Collecting chaquopy-libgfortran==4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_16_x86.whl (408 kB)
+Collecting chaquopy-openblas==0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_16_x86.whl (4.5 MB)
+Collecting numpy==1.19.5
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_16_x86.whl (4.1 MB)
+Collecting scipy==1.4.1
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_16_x86.whl (15.6 MB)
+Installing collected packages: chaquopy-libcxx, chaquopy-libgfortran, chaquopy-openblas, numpy, scipy
+Successfully installed chaquopy-libcxx-180000 chaquopy-libgfortran-4.9 chaquopy-openblas-0.2.20 numpy-1.19.5 scipy-1.4.1
+Chaquopy: Installing for x86_64
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting chaquopy-libcxx==180000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_x86_64.whl (422 kB)
+Collecting chaquopy-libgfortran==4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_x86_64.whl (541 kB)
+Collecting chaquopy-openblas==0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_x86_64.whl (5.3 MB)
+Collecting numpy==1.19.5
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_21_x86_64.whl (4.6 MB)
+Collecting scipy==1.4.1
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_21_x86_64.whl (17.7 MB)
+Installing collected packages: chaquopy-libcxx, chaquopy-libgfortran, chaquopy-openblas, numpy, scipy
+Successfully installed chaquopy-libcxx-180000 chaquopy-libgfortran-4.9 chaquopy-openblas-0.2.20 numpy-1.19.5 scipy-1.4.1
+Warning: Failed to compile to .pyc format: buildPython version 3.11.9 is incompatible. See https://chaquo.com/chaquopy/doc/current/android.html#android-bytecode.
+
+> Task :app:mergeDebugPythonSources
+Warning: Failed to compile to .pyc format: buildPython version 3.11.9 is incompatible. See https://chaquo.com/chaquopy/doc/current/android.html#android-bytecode.
+
+> Task :app:generateDebugPythonProxies
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:generateDebugPythonMiscAssets
+
+> Task :app:compileDebugKotlin
+w: file:///C:/Users/Lenovo/machinedignostic/app/src/main/java/com/example/machinedignostic/AudioDecoder.kt:45:32 'val inputBuffers: (Array<ByteBuffer!>..Array<out ByteBuffer!>)' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Lenovo/machinedignostic/app/src/main/java/com/example/machinedignostic/AudioDecoder.kt:46:33 'val outputBuffers: (Array<ByteBuffer!>..Array<out ByteBuffer!>)' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Lenovo/machinedignostic/app/src/main/java/com/example/machinedignostic/MainActivity.kt:195:17 Condition is always 'true'.
+
+> Task :app:generateDebugPythonRequirementsAssets
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:generateDebugPythonSourceAssets
+> Task :app:generateDebugPythonBuildAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes
+> Task :app:mergeDebugJavaResource
+> Task :app:compressDebugAssets
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies
+> Task :app:dexBuilderDebug
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeProjectDexDebug
+> Task :app:generateDebugPythonJniLibs
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:mergeDebugNativeLibs
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libchaquopy_java.so, libcrypto_chaquopy.so, libpython3.8.so, libsqlite3_chaquopy.so, libssl_chaquopy.so. Run with --info option to learn more.
+
+> Task :app:mergeExtDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDebug
+
+[Incubating] Problems report is available at: file:///C:/Users/Lenovo/machinedignostic/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 3m 30s
+45 actionable tasks: 22 executed, 23 up-to-date

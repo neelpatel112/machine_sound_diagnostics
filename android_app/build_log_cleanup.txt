@@ -1,0 +1,144 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:extractDebugPythonBuildPackages UP-TO-DATE
+> Task :app:generateDebugPythonRequirements
+Chaquopy: Installing for arm64-v8a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting numpy
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_21_arm64_v8a.whl (3.8 MB)
+Collecting scipy
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_21_arm64_v8a.whl (15.8 MB)
+Collecting chaquopy-libgfortran>=4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_arm64_v8a.whl (495 kB)
+Collecting chaquopy-openblas>=0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_arm64_v8a.whl (4.3 MB)
+Collecting chaquopy-libcxx>=7000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_arm64_v8a.whl (413 kB)
+Installing collected packages: chaquopy-libgfortran, chaquopy-openblas, numpy, chaquopy-libcxx, scipy
+Successfully installed chaquopy-libcxx-180000 chaquopy-libgfortran-4.9 chaquopy-openblas-0.2.20 numpy-1.19.5 scipy-1.4.1
+Chaquopy: Installing for armeabi-v7a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting chaquopy-libcxx==180000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_armeabi_v7a.whl (355 kB)
+Collecting chaquopy-libgfortran==4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_16_armeabi_v7a.whl (394 kB)
+Collecting chaquopy-openblas==0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_16_armeabi_v7a.whl (4.0 MB)
+Collecting numpy==1.19.5
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_16_armeabi_v7a.whl (3.7 MB)
+Collecting scipy==1.4.1
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_16_armeabi_v7a.whl (15.0 MB)
+Installing collected packages: chaquopy-libcxx, chaquopy-libgfortran, chaquopy-openblas, numpy, scipy
+Successfully installed chaquopy-libcxx-180000 chaquopy-libgfortran-4.9 chaquopy-openblas-0.2.20 numpy-1.19.5 scipy-1.4.1
+Chaquopy: Installing for x86
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting chaquopy-libcxx==180000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_x86.whl (444 kB)
+Collecting chaquopy-libgfortran==4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_16_x86.whl (408 kB)
+Collecting chaquopy-openblas==0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_16_x86.whl (4.5 MB)
+Collecting numpy==1.19.5
+  Downloading https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_16_x86.whl (4.1 MB)
+ERROR: Exception:
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\urllib3\response.py", line 425, in _error_catcher
+    yield
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\urllib3\response.py", line 507, in read
+    data = self._fp.read(amt) if not fp_closed else b""
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\cachecontrol\filewrapper.py", line 62, in read
+    data = self.__fp.read(amt)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 473, in read
+    s = self.fp.read(amt)
+        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\cli\base_command.py", line 188, in _main
+    status = self.run(options, args)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\cli\req_command.py", line 185, in wrapper
+    return func(self, options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\commands\install.py", line 335, in run
+    requirement_set = resolver.resolve(
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\resolution\legacy\resolver.py", line 179, in resolve
+    discovered_reqs.extend(self._resolve_one(requirement_set, req))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\resolution\legacy\resolver.py", line 362, in _resolve_one
+    abstract_dist = self._get_abstract_dist_for(req_to_install)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\resolution\legacy\resolver.py", line 314, in _get_abstract_dist_for
+    abstract_dist = self.preparer.prepare_linked_requirement(req)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\operations\prepare.py", line 413, in prepare_linked_requirement
+    local_file = unpack_url(
+                 ^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\operations\prepare.py", line 197, in unpack_url
+    file = get_http_url(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\operations\prepare.py", line 126, in get_http_url
+    from_path, content_type = _download_http_url(
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\operations\prepare.py", line 223, in _download_http_url
+    for chunk in download.chunks:
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\cli\progress_bars.py", line 166, in iter
+    for x in it:
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_internal\network\utils.py", line 15, in response_chunks
+    for chunk in response.raw.stream(
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\urllib3\response.py", line 564, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\urllib3\response.py", line 500, in read
+    with self._error_catcher():
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\pip\_vendor\urllib3\response.py", line 430, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.")
+pip._vendor.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='chaquo.com', port=443): Read timed out.
+Chaquopy: Exit status 2
+
+> Task :app:generateDebugPythonRequirements FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/Lenovo/machinedignostic/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:generateDebugPythonRequirements'.
+> Process 'command 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe'' finished with non-zero exit value 1 
+  
+  To view full details in Android Studio:
+  * Click the 'Build: failed' caption to the left of this message.
+  * Then scroll up to see the full output.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 13m 44s
+2 actionable tasks: 1 executed, 1 up-to-date

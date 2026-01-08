@@ -1,0 +1,34 @@
+> Task :app:clean FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:clean'.
+> java.io.IOException: Unable to delete directory 'D:\appcopy\machinedignostic\app\build'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - D:\appcopy\machinedignostic\app\build\generated\res\pngs\debug
+    - D:\appcopy\machinedignostic\app\build\generated\res\pngs\release
+    - D:\appcopy\machinedignostic\app\build\generated\res\pngs
+    - D:\appcopy\machinedignostic\app\build\generated\res\resValues\debug
+    - D:\appcopy\machinedignostic\app\build\generated\res\resValues\release
+    - D:\appcopy\machinedignostic\app\build\generated\res\resValues
+    - D:\appcopy\machinedignostic\app\build\generated\res
+    - D:\appcopy\machinedignostic\app\build\generated\updated_navigation_xml\debug
+    - D:\appcopy\machinedignostic\app\build\generated\updated_navigation_xml\release
+    - D:\appcopy\machinedignostic\app\build\generated\updated_navigation_xml
+    - D:\appcopy\machinedignostic\app\build\generated
+    - D:\appcopy\machinedignostic\app\build\intermediates\aar_metadata_check\debug\checkDebugAarMetadata
+    - D:\appcopy\machinedignostic\app\build\intermediates\aar_metadata_check\debug
+    - D:\appcopy\machinedignostic\app\build\intermediates\aar_metadata_check\release\checkReleaseAarMetadata
+    - D:\appcopy\machinedignostic\app\build\intermediates\aar_metadata_check\release
+    - D:\appcopy\machinedignostic\app\build\intermediates\aar_metadata_check
+    - and more ...
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 13s
+1 actionable task: 1 executed

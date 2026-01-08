@@ -1,0 +1,27 @@
+
+> Configure project :app
+e: file:///D:/appcopy/machinedignostic/app/build.gradle.kts:17:17: Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public fun Configuration.exclude(group: String? = ..., module: String? = ...): Configuration defined in org.gradle.kotlin.dsl
+w: Detected multiple Kotlin daemon sessions at 
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'D:\appcopy\machinedignostic\app\build.gradle.kts' line: 17
+
+* What went wrong:
+Script compilation error:
+
+  Line 17:                 exclude("**/UpdateManager.kt")
+                           ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+                               public fun Configuration.exclude(group: String? = ..., module: String? = ...): Configuration defined in org.gradle.kotlin.dsl
+
+1 error
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5s

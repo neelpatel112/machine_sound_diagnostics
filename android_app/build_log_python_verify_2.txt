@@ -1,0 +1,229 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:extractDebugPythonBuildPackages
+
+> Task :app:generateDebugPythonRequirements
+Chaquopy: Installing for arm64-v8a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting numpy
+  Downloading https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_21_arm64_v8a.whl (3.8 MB)
+Collecting librosa==0.10.1
+  Downloading librosa-0.10.1-py3-none-any.whl (253 kB)
+Collecting tflite-runtime
+  Downloading https://chaquo.com/pypi-13.1/tflite-runtime/tflite_runtime-2.5.0-1-cp38-cp38-android_21_arm64_v8a.whl (1.2 MB)
+Collecting chaquopy-libgfortran>=4.9
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_arm64_v8a.whl (495 kB)
+Collecting chaquopy-openblas>=0.2.20
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_arm64_v8a.whl (4.3 MB)
+Collecting numba>=0.51.0
+  Downloading numba-0.58.1.tar.gz (2.6 MB)
+Collecting msgpack>=1.0
+  Downloading msgpack-1.1.1.tar.gz (173 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting scikit-learn>=0.20.0
+  Downloading https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.1.3-1-cp38-cp38-android_21_arm64_v8a.whl (7.0 MB)
+Collecting typing-extensions>=4.1.1
+  Downloading typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+Collecting lazy-loader>=0.1
+  Downloading lazy_loader-0.4-py3-none-any.whl (12 kB)
+Collecting soundfile>=0.12.1
+  Downloading soundfile-0.13.1-py2.py3-none-any.whl (25 kB)
+Collecting scipy>=1.2.0
+  Downloading https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_21_arm64_v8a.whl (15.8 MB)
+Collecting pooch>=1.0
+  Downloading pooch-1.8.2-py3-none-any.whl (64 kB)
+Collecting decorator>=4.3.0
+  Downloading decorator-5.2.1-py3-none-any.whl (9.2 kB)
+Collecting soxr>=0.3.2
+  Downloading https://chaquo.com/pypi-13.1/soxr/soxr-0.3.6-0-cp38-cp38-android_21_arm64_v8a.whl (373 kB)
+Collecting joblib>=0.14
+  Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Collecting audioread>=2.1.9
+  Downloading audioread-3.0.1-py3-none-any.whl (23 kB)
+Collecting chaquopy-libcxx>=10000
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_arm64_v8a.whl (413 kB)
+Collecting llvmlite<0.42,>=0.41.0dev0
+  Downloading llvmlite-0.41.1.tar.gz (146 kB)
+Collecting importlib_metadata
+  Downloading importlib_metadata-8.5.0-py3-none-any.whl (26 kB)
+Collecting chaquopy-libomp>=9.0.9
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libomp/chaquopy_libomp-9.0.9-0-py3-none-android_21_arm64_v8a.whl (240 kB)
+Collecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Collecting packaging
+  Downloading packaging-25.0-py3-none-any.whl (66 kB)
+Collecting cffi>=1.0
+  Downloading https://chaquo.com/pypi-13.1/cffi/cffi-1.13.2-1-cp38-cp38-android_21_arm64_v8a.whl (168 kB)
+Collecting requests>=2.19.0
+  Downloading requests-2.32.4-py3-none-any.whl (64 kB)
+Collecting platformdirs>=2.5.0
+  Downloading platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Collecting zipp>=3.20
+  Downloading zipp-3.20.2-py3-none-any.whl (9.2 kB)
+Collecting chaquopy-libffi>=3.3
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libffi/chaquopy_libffi-3.3-3-py3-none-android_24_arm64_v8a.whl (33 kB)
+Collecting pycparser
+  Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+Collecting idna<4,>=2.5
+  Downloading idna-3.11-py3-none-any.whl (71 kB)
+Collecting urllib3<3,>=1.21.1
+  Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Collecting charset_normalizer<4,>=2
+  Downloading charset_normalizer-3.4.4-py3-none-any.whl (53 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2025.11.12-py3-none-any.whl (159 kB)
+Building wheels for collected packages: numba, msgpack, llvmlite
+  Building wheel for numba (setup.py): started
+  Building wheel for numba (setup.py): finished with status 'error'
+  ERROR: Command errored out with exit status 1:
+   command: 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\pip-install-u7qdduo5\\numba\\setup.py'"'"'; __file__='"'"'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\pip-install-u7qdduo5\\numba\\setup.py'"'"';import chaquopy_monkey; chaquopy_monkey.disable_native();f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d 'C:\Users\Lenovo\AppData\Local\Temp\pip-wheel-f5be2fmt'
+       cwd: C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\numba\
+  Complete output (8 lines):
+  Traceback (most recent call last):
+    File "<string>", line 1, in <module>
+    File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\numba\setup.py", line 424, in <module>
+      metadata['ext_modules'] = get_ext_modules()
+                                ^^^^^^^^^^^^^^^^^
+    File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\numba\setup.py", line 138, in get_ext_modules
+      import numpy as np
+  ModuleNotFoundError: No module named 'numpy'
+  ----------------------------------------
+  ERROR: Failed building wheel for numba
+  Running setup.py clean for numba
+  Building wheel for msgpack (PEP 517): started
+  Building wheel for msgpack (PEP 517): finished with status 'done'
+  Created wheel for msgpack: filename=msgpack-1.1.1-cp311-cp311-win_amd64.whl size=71923 sha256=2467ed0b4bfcd800b2540911ac14e2990ee36e0efb5b68a98ac5c441ff4736cc
+  Stored in directory: c:\users\lenovo\appdata\local\chaquopy\pip\cache\wheels\26\e6\47\34a3edf4746b28e280acd15dc408600046532a453ca9a5e399
+  Building wheel for llvmlite (setup.py): started
+  Building wheel for llvmlite (setup.py): finished with status 'error'
+  ERROR: Command errored out with exit status 1:
+   command: 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\pip-install-u7qdduo5\\llvmlite\\setup.py'"'"'; __file__='"'"'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\pip-install-u7qdduo5\\llvmlite\\setup.py'"'"';import chaquopy_monkey; chaquopy_monkey.disable_native();f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d 'C:\Users\Lenovo\AppData\Local\Temp\pip-wheel-0bwprqsp'
+  Running setup.py clean for llvmlite
+       cwd: C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\
+  Complete output (29 lines):
+  running bdist_wheel
+  C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py
+  Trying generator ('Visual Studio 16 2019', 'x64', 'v142')
+  Running: cmake -G Visual Studio 16 2019 -A x64 -T v142 C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\dummy
+  Traceback (most recent call last):
+    File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 228, in <module>
+      main()
+    File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 215, in main
+      main_windows()
+    File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 96, in main_windows
+      generator = find_windows_generator()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 84, in find_windows_generator
+      try_cmake(cmake_dir, build_dir, *generator)
+    File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 36, in try_cmake
+      subprocess.check_call(args)
+    File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 408, in check_call
+      retcode = call(*popenargs, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 389, in call
+      with Popen(*popenargs, **kwargs) as p:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+      self._execute_child(args, executable, preexec_fn, close_fds,
+    File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+      hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  FileNotFoundError: [WinError 2] The system cannot find the file specified
+  error: command 'C:\\Users\\Lenovo\\machinedignostic\\app\\build\\python\\env\\debug\\Scripts\\python.exe' failed with exit code 1
+  ----------------------------------------
+  ERROR: Failed building wheel for llvmlite
+Successfully built msgpack
+Failed to build numba llvmlite
+ERROR: numba 0.58.1 has requirement numpy<1.27,>=1.22, but you'll have numpy 1.19.5 which is incompatible.
+Installing collected packages: chaquopy-libgfortran, chaquopy-openblas, numpy, llvmlite, zipp, importlib-metadata, numba, msgpack, chaquopy-libomp, chaquopy-libcxx, joblib, scipy, threadpoolctl, scikit-learn, typing-extensions, packaging, lazy-loader, chaquopy-libffi, pycparser, cffi, soundfile, idna, urllib3, charset-normalizer, certifi, requests, platformdirs, pooch, decorator, soxr, audioread, librosa, tflite-runtime
+ERROR: librosa 0.10.1 has requirement numpy!=1.22.0,!=1.22.1,!=1.22.2,>=1.20.3, but you'll have numpy 1.19.5 which is incompatible.
+    Running setup.py install for llvmlite: started
+    Running setup.py install for llvmlite: finished with status 'error'
+    ERROR: Command errored out with exit status 1:
+     command: 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\pip-install-u7qdduo5\\llvmlite\\setup.py'"'"'; __file__='"'"'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\pip-install-u7qdduo5\\llvmlite\\setup.py'"'"';import chaquopy_monkey; chaquopy_monkey.disable_native();f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' --no-user-cfg install --record 'C:\Users\Lenovo\AppData\Local\Temp\pip-record-_f5zbex2\install-record.txt' --single-version-externally-managed --home 'C:\Users\Lenovo\AppData\Local\Temp\pip-target-gz1aico1' --no-compile --install-headers 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\include\site\python3.11\llvmlite' --prefix=
+         cwd: C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\
+    Complete output (45 lines):
+    running install
+    C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\setuptools\_distutils\cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+    !!
+    
+            ********************************************************************************
+            Please avoid running ``setup.py`` directly.
+            Instead, use pypa/build, pypa/installer or other
+            standards-based tools.
+    
+            See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+            ********************************************************************************
+    
+    !!
+      self.initialize_options()
+    running build
+    got version from file C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\llvmlite/_version.py {'version': '0.41.1', 'full': '42db9b74c8e8ca012cb4394cbf941f2f9e4ae12b'}
+    running build_ext
+    C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py
+    Trying generator ('Visual Studio 16 2019', 'x64', 'v142')
+    Running: cmake -G Visual Studio 16 2019 -A x64 -T v142 C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\dummy
+    Traceback (most recent call last):
+      File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 228, in <module>
+        main()
+      File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 215, in main
+        main_windows()
+      File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 96, in main_windows
+        generator = find_windows_generator()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 84, in find_windows_generator
+        try_cmake(cmake_dir, build_dir, *generator)
+      File "C:\Users\Lenovo\AppData\Local\Temp\pip-install-u7qdduo5\llvmlite\ffi\build.py", line 36, in try_cmake
+        subprocess.check_call(args)
+      File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 408, in check_call
+        retcode = call(*popenargs, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 389, in call
+        with Popen(*popenargs, **kwargs) as p:
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1026, in __init__
+        self._execute_child(args, executable, preexec_fn, close_fds,
+      File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\subprocess.py", line 1538, in _execute_child
+        hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    FileNotFoundError: [WinError 2] The system cannot find the file specified
+    error: command 'C:\\Users\\Lenovo\\machinedignostic\\app\\build\\python\\env\\debug\\Scripts\\python.exe' failed with exit code 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\pip-install-u7qdduo5\\llvmlite\\setup.py'"'"'; __file__='"'"'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\pip-install-u7qdduo5\\llvmlite\\setup.py'"'"';import chaquopy_monkey; chaquopy_monkey.disable_native();f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' --no-user-cfg install --record 'C:\Users\Lenovo\AppData\Local\Temp\pip-record-_f5zbex2\install-record.txt' --single-version-externally-managed --home 'C:\Users\Lenovo\AppData\Local\Temp\pip-target-gz1aico1' --no-compile --install-headers 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\include\site\python3.11\llvmlite' --prefix= Check the logs for full command output.
+Chaquopy: Exit status 1
+
+> Task :app:generateDebugPythonRequirements FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/Lenovo/machinedignostic/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:generateDebugPythonRequirements'.
+> Process 'command 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe'' finished with non-zero exit value 1 
+  
+  To view full details in Android Studio:
+  * Click the 'Build: failed' caption to the left of this message.
+  * Then scroll up to see the full output.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1m 51s
+2 actionable tasks: 2 executed

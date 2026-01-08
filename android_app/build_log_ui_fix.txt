@@ -1,0 +1,28 @@
+
+> Configure project :app
+e: file:///D:/appcopy/machinedignostic/app/build.gradle.kts:19:33: Unresolved reference: util
+e: file:///D:/appcopy/machinedignostic/app/build.gradle.kts:21:36: Unresolved reference: io
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'D:\appcopy\machinedignostic\app\build.gradle.kts' line: 19
+
+* What went wrong:
+Script compilation errors:
+
+  Line 19:         val versionProps = java.util.Properties()
+                                           ^ Unresolved reference: util
+
+  Line 21:             versionProps.load(java.io.FileInputStream(versionPropsFile))
+                                              ^ Unresolved reference: io
+
+2 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 4s

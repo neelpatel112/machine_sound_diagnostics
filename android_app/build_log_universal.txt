@@ -1,0 +1,91 @@
+Starting a Gradle Daemon, 2 busy and 1 incompatible and 3 stopped Daemons could not be reused, use --status for details
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:extractDebugPythonBuildPackages UP-TO-DATE
+> Task :app:generateDebugPythonRequirements
+Chaquopy: Installing for arm64-v8a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting numpy
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_21_arm64_v8a.whl (3.8 MB)
+Collecting scipy
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_21_arm64_v8a.whl (15.8 MB)
+Collecting chaquopy-libgfortran>=4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_arm64_v8a.whl (495 kB)
+Collecting chaquopy-openblas>=0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_arm64_v8a.whl (4.3 MB)
+Collecting chaquopy-libcxx>=7000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_arm64_v8a.whl (413 kB)
+Installing collected packages: chaquopy-libgfortran, chaquopy-openblas, numpy, chaquopy-libcxx, scipy
+Successfully installed chaquopy-libcxx-180000 chaquopy-libgfortran-4.9 chaquopy-openblas-0.2.20 numpy-1.19.5 scipy-1.4.1
+Chaquopy: Installing for armeabi-v7a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting chaquopy-libcxx==180000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_armeabi_v7a.whl (355 kB)
+Collecting chaquopy-libgfortran==4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_16_armeabi_v7a.whl (394 kB)
+Collecting chaquopy-openblas==0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_16_armeabi_v7a.whl (4.0 MB)
+Collecting numpy==1.19.5
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_16_armeabi_v7a.whl (3.7 MB)
+Collecting scipy==1.4.1
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_16_armeabi_v7a.whl (15.0 MB)
+Installing collected packages: chaquopy-libcxx, chaquopy-libgfortran, chaquopy-openblas, numpy, scipy
+Successfully installed chaquopy-libcxx-180000 chaquopy-libgfortran-4.9 chaquopy-openblas-0.2.20 numpy-1.19.5 scipy-1.4.1
+Chaquopy: Installing for x86
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting chaquopy-libcxx==180000
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_x86.whl (444 kB)
+Collecting chaquopy-libgfortran==4.9
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_16_x86.whl (408 kB)
+Collecting chaquopy-openblas==0.2.20
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_16_x86.whl (4.5 MB)
+Collecting numpy==1.19.5
+  Using cached https://chaquo.com/pypi-13.1/numpy/numpy-1.19.5-0-cp38-cp38-android_16_x86.whl (4.1 MB)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /pypi-13.1/scipy/
+Collecting scipy==1.4.1
+  Using cached https://chaquo.com/pypi-13.1/scipy/scipy-1.4.1-0-cp38-cp38-android_16_x86.whl (15.6 MB)
+Installing collected packages: chaquopy-libcxx, chaquopy-libgfortran, chaquopy-openblas, numpy, scipy
+Successfully installed chaquopy-libcxx-180000 chaquopy-libgfortran-4.9 chaquopy-openblas-0.2.20 numpy-1.19.5 scipy-1.4.1
+Chaquopy: Installing for x86_64
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\chaquopy\pip_install.py", line 362, in <module>
+    PipInstall().main()
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\chaquopy\pip_install.py", line 76, in main
+    req_infos, abi_trees[abi] = self.pip_install(abi, native_reqs)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Lib\site-packages\chaquopy\pip_install.py", line 103, in pip_install
+    os.mkdir(abi_dir)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\Lenovo\\machinedignostic\\app\\build\\python\\pip\\debug\\x86_64'
+
+> Task :app:generateDebugPythonRequirements FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/Lenovo/machinedignostic/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:generateDebugPythonRequirements'.
+> Process 'command 'C:\Users\Lenovo\machinedignostic\app\build\python\env\debug\Scripts\python.exe'' finished with non-zero exit value 1 
+  
+  To view full details in Android Studio:
+  * Click the 'Build: failed' caption to the left of this message.
+  * Then scroll up to see the full output.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 14m 52s
+2 actionable tasks: 1 executed, 1 up-to-date

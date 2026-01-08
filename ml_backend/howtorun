@@ -1,0 +1,4 @@
+Open terminal in d:\finalminorproject
+Run pip install -r requirements.txt
+Train the model: python -m src.train
+Test a file: python -m src.inference "path/to/file.wav"
