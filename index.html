@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Sound Diagnostics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tagline {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .upload-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 2px dashed rgba(255, 255, 255, 0.3);
+        }
+        .file-input {
+            background: white;
+            color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+            border: none;
+            display: block;
+        }
+        .analyze-btn {
+            background: linear-gradient(45deg, #12c2e9, #c471ed);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        .analyze-btn:hover {
+            transform: scale(1.05);
+        }
+        .api-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .api-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 200px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .api-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        .result-box {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+            display: none;
+            text-align: left;
+        }
+        .result-box h3 {
+            margin-top: 0;
+        }
+        .status-working {
+            color: #4CAF50;
+            font-weight: bold;
+            background: rgba(76, 175, 80, 0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .status-error {
+            color: #ff5252;
+            font-weight: bold;
+            background: rgba(255, 82, 82, 0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-card">
+        <h1>🔊 Machine Sound Diagnostics</h1>
+        <p class="tagline">AI-powered analysis of machine audio for predictive maintenance</p>
+        
+        <div class="feature-list">
+            <div class="feature">
+                <h3>🎵 Audio Analysis</h3>
+                <p>Upload machine audio to detect anomalies and predict failures</p>
+            </div>
+            <div class="feature">
+                <h3>🤖 ML Powered</h3>
+                <p>Uses machine learning models for accurate diagnostics</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Real-time</h3>
+                <p>Quick analysis and instant results</p>
+            </div>
+        </div>
+
+        <div class="upload-box">
+            <h2>Upload Machine Audio</h2>
+            <p>Supported formats: WAV, MP3, FLAC</p>
+            
+            <form id="uploadForm">
+                <input type="file" id="audioFile" class="file-input" accept="audio/*" required>
+                <button type="submit" class="analyze-btn">
+                    🚀 Analyze Audio
+                </button>
+            </form>
+            
+            <div id="result" class="result-box"></div>
+        </div>
+
+        <div class="api-links">
+            <a href="/health" class="api-card" target="_blank">
+                <h3>📊 Health Check</h3>
+                <p>Test API status</p>
+            </a>
+            <a href="https://github.com/Rudrapatel330/machine-sound-diagnostics" class="api-card" target="_blank">
+                <h3>💻 GitHub</h3>
+                <p>View source code</p>
+            </a>
+            <a href="https://machinesounddiagnostics.vercel.app/predict" class="api-card" target="_blank">
+                <h3>🔧 API Endpoint</h3>
+                <p>/predict (POST)</p>
+            </a>
+        </div>
+
+        <div id="apiInstructions" style="margin-top: 30px; text-align: left; background: rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3>📚 How to use the API:</h3>
+            <p><strong>Using cURL:</strong></p>
+            <code style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 5px; display: block; margin: 10px 0;">
+                curl -X POST -F "audio=@your_machine_audio.wav" https://machinesounddiagnostics.vercel.app/predict
+            </code>
+            <p><strong>Using Python:</strong></p>
+            <code style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 5px; display: block; margin: 10px 0;">
+                import requests<br>
+                files = {'audio': open('machine.wav', 'rb')}<br>
+                response = requests.post('https://machinesounddiagnostics.vercel.app/predict', files=files)<br>
+                print(response.json())
+            </code>
+        </div>
+
+        <footer>
+            <p>Built with Flask • Deployed on Vercel • Machine Learning Project</p>
+            <p>Note: This is a demo system. The backend API needs to be running for full functionality.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const fileInput = document.getElementById('audioFile');
+            const file = fileInput.files[0];
+            const resultDiv = document.getElementById('result');
+            
+            if (!file) {
+                resultDiv.style.display = 'block';
+                resultDiv.innerHTML = `
+                    <h3>⚠️ Error</h3>
+                    <p>Please select an audio file first.</p>
+                `;
+                return;
+            }
+            
+            // Show loading state
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `
+                <h3>🔍 Analyzing Audio...</h3>
+                <p>Processing: <strong>${file.name}</strong></p>
+                <p>Size: ${(file.size / (1024 * 1024)).toFixed(2)} MB</p>
+                <div style="margin: 15px 0;">
+                    <div style="height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px;">
+                        <div id="progressBar" style="height: 100%; width: 0%; background: linear-gradient(45deg, #12c2e9, #c471ed); border-radius: 2px; transition: width 1s;"></div>
+                    </div>
+                </div>
+                <p class="status-working">Processing audio features...</p>
+            `;
+            
+            // Animate progress bar
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = '70%';
+            
+            try {
+                const formData = new FormData();
+                formData.append('audio', file);
+                
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                progressBar.style.width = '100%';
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    setTimeout(() => {
+                        resultDiv.innerHTML = `
+                            <h3>✅ Analysis Complete</h3>
+                            <p><strong>File:</strong> ${file.name}</p>
+                            <p><strong>Status:</strong> <span class="status-working">${data.status || 'Success'}</span></p>
+                            <p><strong>Prediction:</strong> ${data.prediction || data.result || 'N/A'}</p>
+                            ${data.confidence ? `<p><strong>Confidence:</strong> ${data.confidence}</p>` : ''}
+                            ${data.class ? `<p><strong>Issue Class:</strong> ${data.class}</p>` : ''}
+                            ${data.message ? `<p><strong>Message:</strong> ${data.message}</p>` : ''}
+                            <p style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <strong>💡 Recommendation:</strong><br>
+                                ${getRecommendation(data.prediction || data.result || '')}
+                            </p>
+                        `;
+                    }, 500);
+                } else {
+                    resultDiv.innerHTML = `
+                        <h3>❌ Analysis Failed</h3>
+                        <p><strong>Status:</strong> <span class="status-error">Error ${response.status}</span></p>
+                        <p><strong>Error:</strong> ${data.error || 'Unknown error occurred'}</p>
+                        <p><strong>Details:</strong> ${data.details || 'Please check the audio format and try again'}</p>
+                    `;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <h3>🌐 Connection Error</h3>
+                    <p><strong>Status:</strong> <span class="status-error">Connection Failed</span></p>
+                    <p><strong>Error:</strong> ${error.message}</p>
+                    <p>The backend might be starting up or experiencing issues. Try:</p>
+                    <ul>
+                        <li>Wait a few moments and try again</li>
+                        <li>Check the <a href="/health" style="color: #4CAF50;">/health</a> endpoint</li>
+                        <li>Try a smaller audio file</li>
+                    </ul>
+                `;
+            }
+        });
+
+        function getRecommendation(prediction) {
+            prediction = prediction.toLowerCase();
+            if (prediction.includes('normal') || prediction.includes('healthy')) {
+                return 'Machine operating normally. Continue regular maintenance schedule.';
+            } else if (prediction.includes('bearing') || prediction.includes('vibration')) {
+                return 'Bearing issue detected. Schedule inspection and possible replacement.';
+            } else if (prediction.includes('loose') || prediction.includes('misalignment')) {
+                return 'Alignment issue detected. Check mounting and tighten connections.';
+            } else if (prediction.includes('wear') || prediction.includes('damage')) {
+                return 'Component wear detected. Plan for replacement soon.';
+            } else {
+                return 'Review machine logs and consider professional inspection.';
+            }
+        }
+
+        // Check API health on page load
+        window.addEventListener('load', async () => {
+            try {
+                const response = await fetch('/health');
+                if (response.ok) {
+                    console.log('✅ Backend is reachable');
+                }
+            } catch (error) {
+                console.log('⚠️ Backend health check failed - might be starting up');
+            }
+        });
+    </script>
+</body>
+</html> 
