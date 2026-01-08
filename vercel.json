@@ -1,0 +1,30 @@
+{
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "app.py"
+    },
+    {
+      "src": "/health",
+      "dest": "app.py"
+    },
+    {
+      "src": "/predict",
+      "dest": "app.py",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ],
+  "buildCommand": "pip install -r requirements.txt",
+  "installCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+  "outputDirectory": "."
+} 
